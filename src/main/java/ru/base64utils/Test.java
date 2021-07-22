@@ -2,7 +2,7 @@ package ru.base64utils;
 
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class Test {
 
     private String string_field;

@@ -1,0 +1,100 @@
+@font-face {
+    font-family: "BebasNeue-Regular"; 
+    src: url("../fonts/BebasNeue-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+
+html{
+    font-size: 20px;
+    /* background-color: rgb(179, 179, 179); */
+    background: radial-gradient(circle farthest-corner at 100px 50px, #FBF2EB, #352A3B);
+    height: 100%;
+    font-family: "BebasNeue-Regular"; 
+}
+
+.main_class{
+    display: flex;
+    justify-content: center;
+    /* align-self: center; */
+    flex-direction: row;
+    height: 35%;
+    /* width: 40rem;
+    height: 30rem; 
+    background-color: rgb(115, 115, 115);
+    border: 1px solid black; */
+}
+
+.main_form{
+    /* align-self: center; */
+/* position: relative;
+background-color: rgb(115, 115, 115);
+border: 1px solid black;
+top: 30%;
+left: 25%;
+width: 40rem;
+height: 30rem; */
+/* width: 40rem;
+height: 30rem; 
+background-color: rgb(115, 115, 115);
+border: 1px solid black; */
+/* border: 1px solid black; */
+border-radius: 10%;
+box-shadow: -1px 9px 100px 77px rgba(91, 28, 91, 0.12);
+/* top: 15%; */
+left: 25%;
+width: 40rem;
+height: 30rem;
+background: radial-gradient(circle farthest-corner at 100px 50px, #FBF2EB, #aa99b3);
+font-size: 1rem;
+margin:7%;
+}
+.main_form form{
+     margin:25%;
+     font-size: 1.5rem;
+
+}
+
+.main_form form button{
+
+    font-family: "BebasNeue-Regular";
+    border: none;
+    border-radius: 10%;
+    background: radial-gradient(circle farthest-corner at 100px 50px, #FBF2EB, #aa99b3);
+    box-shadow: 0px 2px 15px 5px rgba(6, 0, 6, 0.12);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin-left:10%;
+}
+
+.main_form form button:hover{
+    color:white;
+    box-shadow: none;
+
+}
+
+.main_form form input{
+    opacity:0;
+    visibility: hidden;
+    width:1rem;
+}
+
+.input_file{
+    border-radius: 10%;
+    background: radial-gradient(circle farthest-corner at 100px 50px, #FBF2EB, #aa99b3);
+    box-shadow: 0px 2px 15px 5px rgba(6, 0, 6, 0.12);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+
+}
+
+.input_file:hover{
+    color:white;
+    box-shadow: none;
+}

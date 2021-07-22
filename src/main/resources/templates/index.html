@@ -1,11 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
 <head>
-    <meta charset="utf-8">
-    <title>Web Portfolio of Marco</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base64Utils</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<h1>Web Portfolio of Marco</h1>
-<p>Write anything you want to tell the world.</p>
+    <div class="main_class">
+        <div class="main_form">
+            <form method="POST" enctype="multipart/form-data" action="/">
+                <p>
+                    select the file you want to convert to base64 encoding
+                </p>
+                <input type="file" name="file" id="file_id">
+                <label for="file_id" class="input_file">Choose File</label>
+                <button>Encrypt</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

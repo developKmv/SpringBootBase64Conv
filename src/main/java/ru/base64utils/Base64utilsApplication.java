@@ -30,24 +30,26 @@ public class Base64utilsApplication implements ApplicationContextAware {
         return ctx;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         SpringApplication.run(Base64utilsApplication.class, args);
+        /*
         ctx = getApplicationContext();
         log.debug(String.format("Create app context: %s",ctx.toString()));
-
-        log.debug("args: "+ args[0].toString());
+       log.debug("args: "+ args[0].toString());
 
         File file = new File(args[0].toString());
-
         log.debug(String.format("create file: %s",file.toString()));
 
         Base64Func func = ctx.getBean("func",Base64Func.class);
+
         func.setFile(file);
         try {
             func.encode64();
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        }*/
+
     }
 
 }
