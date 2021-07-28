@@ -24,9 +24,9 @@ public class MainController {
         return "index";
     }
 
-    @PostMapping("/")
+    @PostMapping("/encode")
     //@ResponseStatus(HttpStatus.OK)
-    public String encrypt(@RequestParam("file") MultipartFile file)
+    public String encode(@RequestParam("file") MultipartFile file)
     {
         log.debug(String.format("set file: %s",file.toString()));
 
@@ -34,6 +34,25 @@ public class MainController {
             func.encode64m(file,i++);
        } catch (IOException e) {
            e.printStackTrace();
+        }
+        //System.out.println("param file: " + file);
+        //log.debug("Call encrypt");
+        //log.debug(String.format("File upload: ",file.toString()));
+        //System.out.println(String.format("File upload: ",file.toString()));
+        //return "index";
+        return "redirect:/";
+    }
+
+    @PostMapping("/decode")
+    //@ResponseStatus(HttpStatus.OK)
+    public String decode(@RequestParam("file") MultipartFile file)
+    {
+        log.debug(String.format("set file: %s",file.toString()));
+
+        try {
+            func.decode64(file,i++);
+        } catch (IOException e) {
+            e.printStackTrace();
         }
         //System.out.println("param file: " + file);
         //log.debug("Call encrypt");

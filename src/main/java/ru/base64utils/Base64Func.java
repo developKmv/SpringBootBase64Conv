@@ -78,7 +78,18 @@ public class Base64Func {
             result = Base64.getEncoder().encodeToString(file.getBytes());
             writer.write(result.getBytes(StandardCharsets.UTF_8));
             log.debug(String.format("function encode64 is complete result length %d:",result.length()));
-            writer.close();
+        }
+    }
+
+    public void decode64(MultipartFile file,int i) throws IOException {
+
+        File outputDecode64 = new File("output_decode_64_" + i);
+        log.debug(String.format("function decode64 start file %s: ",file.toString()));
+
+        try(RandomAccessFile writer = new RandomAccessFile(outputDecode64, "rw"))
+        {
+            writer.write(Base64.getDecoder().decode(file.getBytes()));
+            log.debug(String.format("function decode64 is complete"));
         }
     }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,17 +8,27 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="main_class">
-        <div class="main_form">
-            <form method="POST" enctype="multipart/form-data" action="/">
-                <p>
-                    select the file you want to convert to base64 encoding
-                </p>
-                <input type="file" name="file" id="file_id">
-                <label for="file_id" class="input_file">Choose File</label>
-                <button>Encrypt</button>
-            </form>
-        </div>
+<div class="main_class">
+    <div class="main_form">
+        <form method="POST" enctype="multipart/form-data" action="/encode">
+            <p>
+                select the file you want to convert to base64 encoding.
+            </p>
+            <input type="file" name="file" id="file_id">
+            <label for="file_id" class="input_file">Choose File</label>
+            <button>Encode</button>
+        </form>
     </div>
+    <div class="main_form">
+        <form method="POST" enctype="multipart/form-data" action="/decode">
+            <p>
+                select a file to decode.
+            </p>
+            <input type="file" name="file" id="file_d">
+            <label for="file_d" class="input_file">Choose File</label>
+            <button>Decode</button>
+        </form>
+    </div>
+</div>
 </body>
 </html>
